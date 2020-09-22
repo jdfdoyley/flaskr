@@ -1,18 +1,18 @@
 {% extends 'base.html' %}
 
 {% block header %}
-<h1>{% block title %}Register{% endblock %}</h1>
+  <h1>{% block title %}Register{% endblock %}</h1>
 {% endblock %}
 
 {% block content %}
-<form action="POST">
+<form method="POST">
   <!-- username textbox -->
   <label for="username">Username</label>
-  <input name="username" id="username" type="text" required>
+  <input name="username" id="username" type="text">
 
   <!-- password textbox -->
   <label for="password">Password</label>
-  <input name="password" id="password" type="password" required>
+  <input name="password" id="password" type="password">
 
   <input type="submit" value="Register">
 </form>

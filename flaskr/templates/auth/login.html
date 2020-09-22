@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 
 {% block header %}
-<h1>{% block title %}Log In{% endblock %}</h1>
+  <h1>{% block title %}Log In{% endblock %}</h1>
 {% endblock %}
 
 {% block content %}
-<form action="POST">
+<form method="POST">
   <!-- username textbox -->
   <label for="username">Username</label>
   <input name="username" id="username" type="text" required>
